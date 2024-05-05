@@ -4,7 +4,7 @@ ClipoAI is a Flask-based web application for managing video projects. It allows 
 
 ## Features
 
-- Create, update, and delete video projects
+- Create, update, get and delete video projects
 - Upload video files associated with video projects
 - Basic video processing functionalities:
   - Generate thumbnail images from video files
@@ -34,3 +34,12 @@ docker run -p 5000:5000 -v /path/to/host/directory:/app/uploads clipoai
 
 - Replace `/path/to/host/directory` ( Absolute Path ) with the directory where you downloaded the repository.
 
+# Working Of API
+
+## Get Access Token
+
+- First create user with the below API
+
+```py
+requests.post('http://localhost:5000/api/signup', json={'email': 'test1@gmail.com', 'username': 'test1', 'password': 'test1'})
+```
