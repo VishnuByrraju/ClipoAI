@@ -38,12 +38,12 @@ docker run -p 5000:5000 -v /path/to/host/directory:/app/uploads clipoai
 
 ## Get Access Token
 
-- First create user with the below API
+### First create user with the below API
 
 ```py
 requests.post('http://localhost:5000/api/signup', data={'email': 'test1@gmail.com', 'username': 'test1', 'password': 'test1'})
 ```
-### Responces
+#### Responces
 - If Successful
 ```bash
 {'message': 'User created successfully'}
@@ -56,3 +56,4 @@ requests.post('http://localhost:5000/api/signup', data={'email': 'test1@gmail.co
 ```bash
 {'message': 'Email already exists'}
 ```
+
