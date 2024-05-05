@@ -43,7 +43,7 @@ docker run -p 5000:5000 -v /path/to/host/directory:/app/uploads clipoai
 ```py
 requests.post('http://localhost:5000/api/signup', data={'email': 'test1@gmail.com', 'username': 'test1', 'password': 'test1'})
 ```
-- Responces
+### Responces
 - If Successful
 ```json
 {'message': 'User created successfully'}
