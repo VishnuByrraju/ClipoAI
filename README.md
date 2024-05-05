@@ -38,7 +38,7 @@ docker run -p 5000:5000 -v /path/to/host/directory:/app/uploads clipoai
 
 ## Get Access Token
 
-### First create user with the below API
+### First create user with the below API ( SignUp )
 
 ```py
 requests.post('http://localhost:5000/api/signup', data={'email': 'test1@gmail.com', 'username': 'test1', 'password': 'test1'})
@@ -56,4 +56,16 @@ requests.post('http://localhost:5000/api/signup', data={'email': 'test1@gmail.co
 ```bash
 {'message': 'Email already exists'}
 ```
+### Now Sign In With The Created User ( Sign In )
+```py
+requests.post('http://localhost:5000/api/login', data={'username': 'test1', 'password': 'test1'})
+```
+- If Successful
 
+```bash
+{'access_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxNDg5MjM5MSwianRpIjoiNTg0MzkxM2ItY2QwMS00MDRlLTgyOGUtNDI4Nzg1YjJhYmJhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6InRlc3QxIiwibmJmIjoxNzE0ODkyMzkxLCJjc3JmIjoiMGE3ZjI4NjUtMGU5MS00YmNlLWFkZjMtNGY5NzU3NjY5MDk0IiwiZXhwIjoxNzE0ODk1OTkxfQ.P9huc8DsNX4ljXqW2laKv7T1PgGaIL5y7nMl4oQ8rws'}
+```
+- If Wrong Credentials
+```bash
+{'message': 'Invalid credentials'}
+```
