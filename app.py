@@ -13,7 +13,7 @@ import os
 app = Flask(__name__)
 
 # Set up MongoDB
-client = MongoClient('mongodb+srv://admin:admin@cluster1.hbxmhai.mongodb.net/')
+client = MongoClient('Your_Connection_String')
 db = client['video_projects_db']
 
 # Set up JWT
