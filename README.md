@@ -15,7 +15,7 @@ ClipoAI is a Flask-based web application for managing video projects. It allows 
 ### Clone the repository
 
 ```bash
-git clone https://github.com/your-username/ClipoAI.git
+git clone https://github.com/VishnuByrraju/ClipoAI.git
 cd ClipoAI
 ```
 
