@@ -34,6 +34,8 @@ docker run -p 5000:5000 -v /path/to/host/directory:/app buildname
 
 - Replace `/path/to/host/directory` ( Absolute Path ) with the directory where you downloaded the repository.
 - Example Path `F:\InternShip\ClipoAI`
+# MongoDB Connection String
+- Before Starting The Project You Need To Change The MongoDB Connection String In app.py
 
 # Working Of API
 
