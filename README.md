@@ -45,14 +45,14 @@ requests.post('http://localhost:5000/api/signup', data={'email': 'test1@gmail.co
 ```
 ### Responces
 - If Successful
-```json
+```bash
 {'message': 'User created successfully'}
 ```
 - If Username already exists
-```json
+```bash
 {'message': 'Username already exists'}
 ```
 - If Email already exists
-```json
+```bash
 {'message': 'Email already exists'}
 ```
