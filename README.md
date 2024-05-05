@@ -17,5 +17,20 @@ ClipoAI is a Flask-based web application for managing video projects. It allows 
 ```bash
 git clone https://github.com/your-username/ClipoAI.git
 cd ClipoAI
+```
 
+# Install dependencies
+
+- Install Docker For Your System ( MacOS, Linux, Windows )
+
+# Docker
+
+- You should run the application in a Docker container
+
+```bash
+docker build -t clipoai .
+docker run -p 5000:5000 -v /path/to/host/directory:/app/uploads clipoai
+```
+
+- Replace `/path/to/host/directory` ( Absolute Path ) with the directory where you downloaded the repository.
 
