@@ -1,4 +1,4 @@
-# ClipoAI
+# ClipoAI Assignment
 
 ClipoAI is a Flask-based web application for managing video projects. It allows users to create, update, and delete video projects, upload video files, and perform basic video processing tasks.
 
